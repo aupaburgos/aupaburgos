@@ -1,0 +1,64 @@
+baseurl = "https://aupaburgos.com/"
+title = "aúpaBurgos.com ⚪️⚫️ Comunidad seguidores Burgos CF"
+DefaultContentLanguage = "es"
+languageCode = "es"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+googleAnalytics = "UA-168784261-1" # Enable Google Analytics by entering your tracking id
+disqusShortname = "aupaburgos-com" # Enable Disqus comments by entering your Disqus shortname
+
+[Author] # Used in authorbox
+  name = "Redacción"
+  bio = "Redacción aúpaBurgos.com"
+  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
+  description = "Comunidad de aficionados al Burgos CF" # Site description. Used in meta description
+  copyright = "aúpaBurgos.com" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "02-01-2006" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#186A3B" # Override highlight color
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+
+
+
+
+[Params.logo]
+  image = "img/logo-aupaburgos.webp" # Logo image. Path relative to "static"
+  title = "aúpaBurgos.com" # Logo title, otherwise will use site title
+  subtitle = "Comunidad de aficionados al BURGOS CF" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["twitter", "search", "recent", "categories", "taglist", "social", "languages", "sidemenu", "recommend" ]
+  
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "aupaburgos"
+  twitter = "aupaburgos"
+  telegram = "aupaburgos"
+  email = "info@aupaburgos.com"
+
+[markup.goldmark.renderer]
+unsafe= true
